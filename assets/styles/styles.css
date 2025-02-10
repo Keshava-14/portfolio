@@ -25,7 +25,6 @@ hr {
 header {
     height: 25vh;
     width: 100vw;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +37,8 @@ header {
     border-bottom: 1px solid #374A67;
 }
 
-.navigation a {
+.navigation a,
+li a {
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -47,7 +47,8 @@ header {
     transition: top 1s linear, left 1s linear, color 0 none;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+li a:hover {
     top: 2px;
     left: 2px;
     color: #9e7b9b;
@@ -101,6 +102,9 @@ header {
 .bio img {
     margin-top: 20px;
 }
+
+
+/* Container Section */
 
 .container {
     width: 100vw;
@@ -164,6 +168,8 @@ header {
     text-align: center;
 }
 
+/* Contact Form */
+
 form {
     display: flex;
     flex-direction: column;
@@ -191,6 +197,8 @@ form input[type="submit"] {
     align-self: center;
 }
 
+/* Footer */
+
 
 footer .social-links {
     flex-direction: row;
@@ -205,6 +213,13 @@ footer .social-links li {
     align-items: center;
     width: fit-content;
 }
+
+li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Responsiveness */
 
 @media screen and (max-width: 750px) {
     

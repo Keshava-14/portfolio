@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Keshava - Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
     <header>
-        <nav class="primary-nav">
-            <ul class="navigation">
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-              </ul>
+        <nav class="primary-nav navigation"> <!-- Check this -->
+            <a href="#home-section">Home</a>
+            <a href="#about-section">About</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#contact-section">Contact</a>
         </nav>
     </header>
 
@@ -31,25 +29,25 @@
         </section>
     </section>
     <hr>
-    <section class="education" id="about-section">
+    <section class="container" id="about-section">
         <h1>Education</h1>
         <ul>
             <li>
-                <div class="edu-title">
+                <div class="title">
                     <h1>Bachelor's in <wbr>Computer Science Engineering</h1>
                     <h5>CGPA : 8</h5>
                 </div>                
                 <p>Mepco Schlenk Engineering College, <wbr>Sivakasi</p>
             </li>
             <li>
-                <div class="edu-title">
+                <div class="title">
                     <h1>HSLC</h1>
                     <h5>Score : 8</h5>
                 </div>
                 <p>Nobel Matriculation Higher Secondary School, Viruthunagar</p>
             </li>
             <li>
-                <div class="edu-title">
+                <div class="title">
                     <h1>SSLC</h1>
                     <h5>CGPA : 8</h5>
                 </div>
@@ -58,24 +56,28 @@
         </ul>
     </section>
     <hr>
-    <section class="achievement">
+    <section class="container">
         <h1>Achievement</h1>
         <ul>
-            <li class="edu-title">
-                <h1>Winner in Code Debugging</h1>
-                <h3>Gyanmithra - 2023</h3>
+            <li>
+                <div class="title">
+                    <h1>Winner in Code Debugging</h1>
+                    <h5>Gyanmithra - 2023</h5>
+                </div>
             </li>
-            <li class="edu-title">
-                <h1>Winner in Poster Making</h1>
-                <h3>Conducted by TNSCST - 2023</h3>
+            <li>
+                <div class="title">
+                    <h1>Winner in Poster Making</h1>
+                    <h5>Conducted by TNSCST - 2023</h5>
+                </div>
             </li>
         </ul>
     </section>
     <hr>
-    <section class="projects" id="projects-section">
+    <section class="container" id="projects-section">
         <h1>Projects</h1>
-        <ul>
-            <li>
+        <ul class="project-list">
+            <li class="card">
                 <h1>Event Website</h1>
                 <img src="./assets/images/dance.jpeg" alt="Image of a boy dancing" width="150px" height="150px">
                 <h4>HTML & CSS</h4>
@@ -83,9 +85,8 @@
                     <p>Event Listing website for Fiesta'24 that is been held at Mepco Schlenk Engineering College</p>
                     <p><a href="">Source Code</a></p>
                 </div>
-                
             </li>
-            <li>
+            <li class="card">
                 <h1>Blockchain</h1>
                 <img src="./assets/images/blockchain.jpeg" alt="Image of a boy dancing" width="150px" height="150px">
                 <h4>Python</h4>
@@ -95,7 +96,7 @@
                 </div>
                 
             </li>
-            <li>
+            <li class="card">
                 <h1>Sudoku Solver</h1>
                 <img src="./assets/images/sudoku.jpeg" alt="Image of a boy dancing" width="150px" height="150px">
                 <h4>HTML & CSS</h4>
@@ -107,7 +108,7 @@
         </ul>
     </section>
     <hr>
-    <section class="contact" id="contact-section">
+    <section class="container" id="contact-section">
         <h1>Contact Me</h1>
         <form action="#">
             <label for="name">Your Name<input type="text" name="name"></label>
@@ -117,9 +118,9 @@
         </form>
     </section>
     <hr>
-    <footer>
+    <footer class="container">
         <h1>Social Links</h1>
-        <ul>
+        <ul class="social-links">
             <li>
                 <img src="assets/images/linkedin.png" alt="Linkedin Logo" width="30px" height="30px">
                 <p>LinkedIn</p>
